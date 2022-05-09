@@ -1,40 +1,34 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Текстовый чат</title>
     <link rel="stylesheet" href="task.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo__container">
-          <a href="https://netology.ru/" class="logo__link"></a>
+            <a href="https://netology.ru/" class="logo__link"></a>
         </div>
         <h1 class="header__title">
             Домашнее задание к занятию 2.2 «Работа с HTML-формами». Текстовый чат.
         </h1>
     </header>
     <div class="chat-widget">
+        <svg class="close-chat" viewBox="0 0 32 32">
+            <path
+                d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z">
+            </path>
+        </svg>
         <div class="chat-widget__area">
             <div class="chat-widget__messages-container">
-                <div class="chat-widget__messages" id="chat-widget__messages">
-                    <!--
-                        Сообщение от робота
-                        <div class="message">
-                            <div class="message__time">22:10</div>
-                            <div class="message__text">Добрый день!</div>
-                        </div>
-                        Сообщение от клиента
-                        <div class="message message_client">
-                            <div class="message__time">22:10</div>
-                            <div class="message__text">Добрый день!</div>
-                        </div>
-                    -->
-                </div>
+                <div class="chat-widget__messages" id="chat-widget__messages"></div>
             </div>
             <input id="chat-widget__input" class="chat-widget__input" placeholder="Введите ваше сообщение">
         </div>
@@ -46,4 +40,5 @@
     </div>
     <script src="task.js"></script>
 </body>
+
 </html>
